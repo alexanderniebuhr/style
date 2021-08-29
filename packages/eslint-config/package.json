@@ -1,0 +1,39 @@
+{
+  "name": "@alexanderniebuhr/eslint-config",
+  "version": "1.0.1",
+  "description": "",
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "homepage": "https://github.com/alexanderniebuhr/style#readme",
+  "bugs": {
+    "url": "https://github.com/alexanderniebuhr/style/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexanderniebuhr/style.git"
+  },
+  "license": "MIT",
+  "author": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sort": "npx sort-package-json@latest",
+    "check": "npx taze@latest major"
+  },
+  "peerDependencies": {
+    "eslint": "7.32.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-import": "2.24.2",
+    "eslint-plugin-regexp": "1.0.0",
+    "eslint-plugin-unicorn": "35.0.0"
+  },
+  "engines": {
+    "npm": ">=7.0.0"
+  },
+  "volta": {
+    "node": "16.8.0",
+    "npm": "7.21.1"
+  }
+}

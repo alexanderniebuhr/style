@@ -15,18 +15,17 @@
   "workspaces": [
     "./packages/*"
   ],
-  "access": "public",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sort": "npx sort-package-json@latest",
-    "sort:all": "npm run sort --workspaces",
-    "patch:all": "npm version patch --workspaces",
-    "minor:all": "npm version minor --workspaces",
-    "major:all": "npm version major --workspaces",
-    "publish:all": "npm publish --tag=latest --workspaces"
+    "sort:all": "npm run sort && npm run sort --workspaces",
+    "patch:all": "npm version patch && npm version patch --workspaces",
+    "minor:all": "npm version minor && npm version minor --workspaces",
+    "major:all": "npm version major && npm version major --workspaces",
+    "publish:all": "npm publish --tag=latest && npm publish --tag=latest --workspaces"
   },
   "peerDependencies": {
-    "@alexanderniebuhr/eslint-config": "1.0.0",
-    "@alexanderniebuhr/prettier-config": "1.0.0"
+    "@alexanderniebuhr/eslint-config": "*",
+    "@alexanderniebuhr/prettier-config": "*"
   }
 }

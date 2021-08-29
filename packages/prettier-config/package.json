@@ -1,0 +1,31 @@
+{
+  "name": "@alexanderniebuhr/prettier-config",
+  "version": "1.0.1",
+  "description": "",
+  "keywords": [
+    "prettier",
+    "prettierconfig"
+  ],
+  "homepage": "https://github.com/alexanderniebuhr/style#readme",
+  "bugs": {
+    "url": "https://github.com/alexanderniebuhr/style/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexanderniebuhr/style.git"
+  },
+  "license": "MIT",
+  "author": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sort": "npx sort-package-json@latest"
+  },
+  "engines": {
+    "npm": ">=7.0.0"
+  },
+  "volta": {
+    "node": "16.8.0",
+    "npm": "7.21.1"
+  }
+}
