@@ -11,5 +11,11 @@ npm i -D @alexanderniebuhr/style
 (optional) run the following command to setup ESLint and prettier configuration files in the project
 
 ```sh
-npx zx@latest https://raw.githubusercontent.com/alexanderniebuhr/style/main/setup.mjs
+npx zx@latest https://raw.githubusercontent.com/alexanderniebuhr/style/main/setup.mjs --write
 ```
+
+### setup options
+
+`--write` write configuration to files
+
+`--typescript` add for typescript projects
