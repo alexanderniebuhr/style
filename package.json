@@ -1,6 +1,6 @@
 {
   "name": "@alexanderniebuhr/style",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "",
   "homepage": "https://github.com/alexanderniebuhr/style#readme",
   "bugs": {
@@ -19,9 +19,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "sort": "npx sort-package-json@latest",
     "sort:all": "npm run sort && npm run sort --workspaces",
-    "patch:all": "npm version patch && npm version patch --workspaces",
-    "minor:all": "npm version minor && npm version minor --workspaces",
-    "major:all": "npm version major && npm version major --workspaces",
+    "patch:all": "npx @jsdevtools/version-bump-prompt@latest patch && npx --workspaces @jsdevtools/version-bump-prompt@latest patch",
+    "minor:all": "npx @jsdevtools/version-bump-prompt@latest minor && npx --workspaces @jsdevtools/version-bump-prompt@latest minor",
+    "major:all": "npx @jsdevtools/version-bump-prompt@latest major && npx --workspaces @jsdevtools/version-bump-prompt@latest major",
     "publish:all": "npm publish --tag=latest && npm publish --tag=latest --workspaces"
   },
   "peerDependencies": {
