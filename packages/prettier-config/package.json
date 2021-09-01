@@ -21,11 +21,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "sort": "npx sort-package-json@latest"
   },
-  "engines": {
-    "npm": ">=7.0.0"
-  },
   "volta": {
-    "node": "16.8.0",
-    "npm": "7.21.1"
+    "extends": "../../package.json"
   }
 }
