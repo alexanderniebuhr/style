@@ -26,6 +26,11 @@
   },
   "peerDependencies": {
     "@alexanderniebuhr/eslint-config": "*",
+    "@alexanderniebuhr/eslint-plugin": "*",
     "@alexanderniebuhr/prettier-config": "*"
+  },
+  "volta": {
+    "npm": "7.21.1",
+    "node": "16.8.0"
   }
 }
