@@ -16,13 +16,13 @@
     "sort": "npx sort-package-json@latest"
   },
   "dependencies": {
-    "requireindex": "^1.1.0"
+    "requireindex": "1.1.0"
   },
   "devDependencies": {
-    "eslint": "^7.1.0",
-    "eslint-plugin-eslint-plugin": "^3.2.0",
-    "eslint-plugin-node": "^11.0.0",
-    "mocha": "^9.0.0"
+    "eslint": "7.1.0",
+    "eslint-plugin-eslint-plugin": "3.2.0",
+    "eslint-plugin-node": "11.0.0",
+    "mocha": "9.0.0"
   },
   "peerDependencies": {
     "eslint": ">=6"

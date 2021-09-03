@@ -21,6 +21,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "sort": "npx sort-package-json@latest"
   },
+  "peerDependencies": {
+    "prettier": "*"
+  },
   "volta": {
     "extends": "../../package.json"
   }
