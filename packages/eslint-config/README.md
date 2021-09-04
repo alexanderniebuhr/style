@@ -1,1 +1,1 @@
-# style
+# @alexanderniebuhr/eslint-config

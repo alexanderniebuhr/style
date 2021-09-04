@@ -1,3 +1,1 @@
-module.exports = {
-  extends: "@alexanderniebuhr/eslint-config",
-};
+module.exports = { extends: '@alexanderniebuhr/eslint-config' }

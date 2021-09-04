@@ -1,6 +1,6 @@
 {
   "name": "@alexanderniebuhr/eslint-config",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "",
   "keywords": [
     "eslint",
@@ -23,13 +23,15 @@
     "check": "npx taze@latest major"
   },
   "peerDependencies": {
-    "@alexanderniebuhr/eslint-plugin": "*",
-    "eslint": "*",
-    "eslint-config-prettier": "*",
-    "eslint-plugin-import": "*",
-    "eslint-plugin-regexp": "*",
-    "eslint-plugin-svelte3": "*",
-    "eslint-plugin-unicorn": "*"
+    "@alexanderniebuhr/eslint-plugin": "1.0.13",
+    "@typescript-eslint/eslint-plugin": "4.30.0",
+    "@typescript-eslint/parser": "4.30.0",
+    "eslint": "7.32.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-import": "2.24.2",
+    "eslint-plugin-regexp": "1.1.0",
+    "eslint-plugin-svelte3": "3.2.0",
+    "eslint-plugin-unicorn": "35.0.0"
   },
   "volta": {
     "extends": "../../package.json"
