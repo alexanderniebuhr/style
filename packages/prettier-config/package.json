@@ -17,12 +17,9 @@
   "license": "MIT",
   "author": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sort": "npx sort-package-json@latest"
-  },
-  "peerDependencies": {
-    "prettier": "*"
+  "scripts": {},
+  "dependencies": {
+    "prettier": "2.5.1"
   },
   "volta": {
     "extends": "../../package.json"

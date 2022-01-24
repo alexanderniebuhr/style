@@ -1,36 +1,32 @@
 {
   "name": "@alexanderniebuhr/style",
-  "version": "1.0.13",
   "description": "",
-  "homepage": "https://github.com/alexanderniebuhr/style#readme",
+  "version": "1.0.13",
+  "author": "",
   "bugs": {
     "url": "https://github.com/alexanderniebuhr/style/issues"
+  },
+  "homepage": "https://github.com/alexanderniebuhr/style#readme",
+  "license": "MIT",
+  "dependencies": {
+    "@alexanderniebuhr/eslint-config": "*",
+    "@alexanderniebuhr/eslint-plugin": "*",
+    "@alexanderniebuhr/prettier-config": "*"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alexanderniebuhr/style.git"
   },
-  "license": "MIT",
-  "author": "",
-  "workspaces": [
-    "./packages/*"
-  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sort": "npx sort-package-json@latest",
-    "sort:all": "npm run sort && npm run sort --workspaces",
-    "patch:all": "npx @jsdevtools/version-bump-prompt@latest patch && npx --workspaces @jsdevtools/version-bump-prompt@latest patch",
-    "minor:all": "npx @jsdevtools/version-bump-prompt@latest minor && npx --workspaces @jsdevtools/version-bump-prompt@latest minor",
-    "major:all": "npx @jsdevtools/version-bump-prompt@latest major && npx --workspaces @jsdevtools/version-bump-prompt@latest major",
-    "publish:all": "npm publish --tag=latest && npm publish --tag=latest --workspaces"
-  },
-  "peerDependencies": {
-    "@alexanderniebuhr/eslint-config": "*",
-    "@alexanderniebuhr/eslint-plugin": "*",
-    "@alexanderniebuhr/prettier-config": "*"
+    "major:all": "npx --workspaces --include-workspace-root @jsdevtools/version-bump-prompt@latest major",
+    "minor:all": "npx --workspaces --include-workspace-root @jsdevtools/version-bump-prompt@latest minor",
+    "patch:all": "npx --workspaces --include-workspace-root @jsdevtools/version-bump-prompt@latest patch",
+    "publish:all": "npm publish --tag=latest --workspaces --include-workspace-root"
   },
   "volta": {
-    "npm": "7.24.1",
-    "node": "16.10.0"
-  }
+    "node": "17.4.0"
+  },
+  "workspaces": [
+    "./packages/*"
+  ]
 }
