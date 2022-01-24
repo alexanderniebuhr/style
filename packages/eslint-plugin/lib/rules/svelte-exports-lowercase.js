@@ -37,18 +37,20 @@ module.exports = {
     return {
       // visitor functions for different types of nodes
       ExportNamedDeclaration(node) {
-        context.getDeclaredVariables(node.declaration).forEach((variable) => {
-          if (variable.name != variable.name.toLowerCase()) {
-            context.report({
-              node: variable.identifiers[0],
-              message: '{{ identifier }} must be lowercase. Replace with {{ newIdentifier }}',
-              data: {
-                identifier: variable.name,
-                newIdentifier: variable.name.toLowerCase(),
-              },
-            })
-          }
-        })
+        if (context.getFilename().endsWith('.svelte')) {
+          context.getDeclaredVariables(node.declaration).forEach((variable) => {
+            if (variable.name != variable.name.toLowerCase()) {
+              context.report({
+                node: variable.identifiers[0],
+                message: '{{ identifier }} must be lowercase. Replace with {{ newIdentifier }}',
+                data: {
+                  identifier: variable.name,
+                  newIdentifier: variable.name.toLowerCase(),
+                },
+              })
+            }
+          })
+        }
       },
     }
   },
