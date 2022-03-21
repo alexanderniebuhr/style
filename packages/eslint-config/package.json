@@ -2,17 +2,13 @@
   "name": "@alexanderniebuhr/eslint-config",
   "description": "",
   "version": "1.1.0",
-  "author": "",
+  "author": {
+    "name": "Alexandre Niebuhr",
+    "email": "tech@nbhr.io"
+  },
   "bugs": {
     "url": "https://github.com/alexanderniebuhr/style/issues"
   },
-  "homepage": "https://github.com/alexanderniebuhr/style#readme",
-  "keywords": [
-    "eslint",
-    "eslintconfig"
-  ],
-  "license": "MIT",
-  "main": "index.js",
   "dependencies": {
     "@alexanderniebuhr/eslint-plugin": "1.0.13",
     "@typescript-eslint/eslint-plugin": "5.10.0",
@@ -24,6 +20,13 @@
     "eslint-plugin-svelte3": "3.4.0",
     "eslint-plugin-unicorn": "40.1.0"
   },
+  "homepage": "https://github.com/alexanderniebuhr/style#readme",
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "license": "MIT",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alexanderniebuhr/style.git"

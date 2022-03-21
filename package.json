@@ -2,21 +2,27 @@
   "name": "@alexanderniebuhr/style",
   "description": "",
   "version": "1.1.0",
-  "author": "",
+  "author": {
+    "name": "Alexandre Niebuhr",
+    "email": "tech@nbhr.io"
+  },
   "bugs": {
     "url": "https://github.com/alexanderniebuhr/style/issues"
   },
-  "homepage": "https://github.com/alexanderniebuhr/style#readme",
-  "license": "MIT",
   "dependencies": {
     "@alexanderniebuhr/eslint-config": "*",
     "@alexanderniebuhr/eslint-plugin": "*",
     "@alexanderniebuhr/prettier-config": "*"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/alexanderniebuhr/style.git"
-  },
+  "funding": [
+    {
+      "type": "individual",
+      "url": "https://github.com/sponsors/alexanderniebuhr"
+    }
+  ],
+  "homepage": "https://github.com/alexanderniebuhr/style#readme",
+  "license": "MIT",
+  "repository": "github:alexanderniebuhr/style",
   "scripts": {
     "major:all": "npx --workspaces --include-workspace-root @jsdevtools/version-bump-prompt@latest major",
     "minor:all": "npx --workspaces --include-workspace-root @jsdevtools/version-bump-prompt@latest minor",
@@ -24,9 +30,11 @@
     "publish:all": "npm publish --tag=latest --workspaces --include-workspace-root"
   },
   "volta": {
-    "node": "17.4.0"
+    "node": "17.7.2"
   },
   "workspaces": [
-    "./packages/*"
+    "packages/eslint-config",
+    "packages/eslint-plugin",
+    "packages/prettier-config"
   ]
 }

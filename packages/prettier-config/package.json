@@ -1,26 +1,27 @@
 {
   "name": "@alexanderniebuhr/prettier-config",
-  "version": "1.1.0",
   "description": "",
+  "version": "1.1.0",
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/alexanderniebuhr/style/issues"
+  },
+  "dependencies": {
+    "@alexanderniebuhr/prettier-plugin-unocss": "file:../unocss_prettier-plugin-unocss",
+    "prettier": "2.5.1"
+  },
+  "homepage": "https://github.com/alexanderniebuhr/style#readme",
   "keywords": [
     "prettier",
     "prettierconfig"
   ],
-  "homepage": "https://github.com/alexanderniebuhr/style#readme",
-  "bugs": {
-    "url": "https://github.com/alexanderniebuhr/style/issues"
-  },
+  "license": "MIT",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alexanderniebuhr/style.git"
   },
-  "license": "MIT",
-  "author": "",
-  "main": "index.js",
   "scripts": {},
-  "dependencies": {
-    "prettier": "2.5.1"
-  },
   "volta": {
     "extends": "../../package.json"
   }
