@@ -1,7 +1,7 @@
 version: 2
 updates:
   - package-ecosystem: 'npm'
-    directory: '/packages/eslint-config'
+    directory: '/'
     open-pull-requests-limit: 25
     schedule:
       interval: 'daily'
@@ -9,25 +9,6 @@ updates:
       time: '07:00'
     rebase-strategy: 'auto'
     versioning-strategy: 'increase'
-  - package-ecosystem: 'npm'
-    directory: '/packages/eslint-plugin'
-    open-pull-requests-limit: 25
-    schedule:
-      interval: 'daily'
-      timezone: 'Europe/Berlin'
-      time: '07:00'
-    rebase-strategy: 'auto'
-    versioning-strategy: 'increase'
-  - package-ecosystem: 'npm'
-    directory: '/packages/prettier-config'
-    open-pull-requests-limit: 25
-    schedule:
-      interval: 'daily'
-      timezone: 'Europe/Berlin'
-      time: '07:00'
-    rebase-strategy: 'auto'
-    versioning-strategy: 'increase'
-
   - package-ecosystem: 'github-actions'
     directory: '/'
     open-pull-requests-limit: 25
