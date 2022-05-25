@@ -1,14 +1,14 @@
 {
   "name": "@alexanderniebuhr/prettier-config",
   "description": "",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "author": "",
   "bugs": {
     "url": "https://github.com/alexanderniebuhr/style/issues"
   },
   "dependencies": {
-    "@alexanderniebuhr/prettier-plugin-unocss": "file:../unocss_prettier-plugin-unocss",
-    "prettier": "2.6.0"
+    "@alexanderniebuhr/prettier-plugin-unocss": "0.0.4",
+    "prettier": "2.6.2"
   },
   "homepage": "https://github.com/alexanderniebuhr/style#readme",
   "keywords": [

@@ -1,7 +1,7 @@
 {
   "name": "@alexanderniebuhr/style",
   "description": "",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "author": {
     "name": "Alexandre Niebuhr",
     "email": "tech@nbhr.io"
@@ -10,9 +10,8 @@
     "url": "https://github.com/alexanderniebuhr/style/issues"
   },
   "dependencies": {
-    "@alexanderniebuhr/eslint-config": "*",
-    "@alexanderniebuhr/eslint-plugin": "*",
-    "@alexanderniebuhr/prettier-config": "*"
+    "@alexanderniebuhr/eslint-config": "workspace:*",
+    "@alexanderniebuhr/prettier-config": "workspace:*"
   },
   "funding": [
     {
@@ -29,12 +28,12 @@
     "patch:all": "npx --workspaces --include-workspace-root @jsdevtools/version-bump-prompt@latest patch",
     "publish:all": "npm publish --tag=latest --workspaces --include-workspace-root"
   },
-  "volta": {
-    "node": "17.7.2"
-  },
   "workspaces": [
     "packages/eslint-config",
     "packages/eslint-plugin",
     "packages/prettier-config"
-  ]
+  ],
+  "devDependencies": {
+    "@changesets/cli": "2.22.0"
+  }
 }

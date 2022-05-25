@@ -3,12 +3,12 @@ console.log(argv)
 
 if (argv.write) {
   await fs.writeFile(
-    '.prettierrc.js',
+    '.prettierrc.cjs',
     "module.exports = { ...require('@alexanderniebuhr/prettier-config') }"
   )
   if (argv.typescript) {
     await fs.writeFile(
-      '.eslintrc.js',
+      '.eslintrc.cjs',
       "module.exports = { extends: ['@alexanderniebuhr/eslint-config/typescript'] }"
     )
   } else {
@@ -17,8 +17,8 @@ if (argv.write) {
       "module.exports = { extends: ['@alexanderniebuhr/eslint-config'] }"
     )
   }
-  console.log('Successfully written : ".prettierrc.js", "./.eslintrc.js"')
-  console.log('command to format: npx prettier@latest --write .prettierrc.js .eslintrc.js')
+  console.log('Successfully written : ".prettierrc.cjs", ".eslintrc.cjs"')
+  console.log('command to format: npx -y prettier@latest --write .prettierrc.cjs .eslintrc.cjs')
 } else {
   console.log('just installed deps, add configuration files manually')
 }
