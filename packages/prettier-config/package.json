@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@alexanderniebuhr/prettier-plugin-unocss": "0.0.4",
-    "prettier": "2.6.2"
+    "prettier": "2.7.1"
   },
   "homepage": "https://github.com/alexanderniebuhr/style#readme",
   "keywords": [
@@ -20,9 +20,5 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alexanderniebuhr/style.git"
-  },
-  "scripts": {},
-  "volta": {
-    "extends": "../../package.json"
   }
 }
