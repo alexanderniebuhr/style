@@ -1,7 +1,7 @@
 {
   "name": "@alexanderniebuhr/eslint-config",
   "description": "",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "author": {
     "name": "Alexandre Niebuhr",
     "email": "tech@nbhr.io"
@@ -10,7 +10,7 @@
     "url": "https://github.com/alexanderniebuhr/style/issues"
   },
   "dependencies": {
-    "@alexanderniebuhr/eslint-plugin": "1.3.0",
+    "@alexanderniebuhr/eslint-plugin": "1.4.0",
     "@typescript-eslint/eslint-plugin": "5.26.0",
     "@typescript-eslint/parser": "5.26.0",
     "eslint": "8.16.0",
