@@ -35,6 +35,6 @@
     "packages/prettier-config"
   ],
   "devDependencies": {
-    "@changesets/cli": "2.22.0"
+    "@changesets/cli": "2.24.1"
   }
 }
