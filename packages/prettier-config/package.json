@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@alexanderniebuhr/prettier-plugin-unocss": "0.0.4",
-    "prettier": "2.7.1"
+    "prettier": "2.8.0"
   },
   "homepage": "https://github.com/alexanderniebuhr/style#readme",
   "keywords": [
